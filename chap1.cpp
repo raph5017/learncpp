@@ -1,3 +1,5 @@
+/*
+
 #include <iostream>
 
 int main()
@@ -9,7 +11,7 @@ int main()
 
 	std::cout << "Enter another integer: ";
 
-	int num2{ }; // define variable num as an integer
+	int num2{ }; // define variable num2 as an integer
 	std::cin >> num2; // get integer value from user's keyboard
 
 	std::cout << num << " + " << num2 << " is: " << num + num2 << '\n';
@@ -19,4 +21,4 @@ int main()
 	return 0;
 
 }
-
+*/
