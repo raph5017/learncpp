@@ -12,5 +12,6 @@ int main()
 	std::cout << "Triple " << num << " is: " << num * 3 << '\n'; // multiply number *3 when printing
 
 	return 0;
+
 }
 
