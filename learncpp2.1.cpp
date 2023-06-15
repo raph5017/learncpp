@@ -1,17 +1,20 @@
 # include <iostream> //for std::cout
 
-//Definition of user-defined function doPrint()
-void doPrint() //doPrint() is the called function in the example
+int getValueFromUser()
 {
-	std::cout << "In doPrint()\n";
+	std::cout << "Enter an integer: ";
+	int input{};
+	std::cin >> input;
+
+	return input;
 }
 
-// Definition of function main()
 int main()
 {
-	std::cout << "Starting main()\n";
-	doPrint();
-	std::cout << "Ending main()\n";
+	int x{ getValueFromUser() };
+	int y{ getValueFromUser() };
+
+	std::cout << x << " + " << y << " is "  << x + y << '\n';
 
 	return 0;
 }
