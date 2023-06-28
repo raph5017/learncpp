@@ -1,15 +1,17 @@
 #include <iostream>
 
-int doubleNumber(int x)
-{
-    return x * 2;
-}
-
-
 int main()
 {
-    int x{};
-    std::cin >> x;
-    std::cout << doubleNumber(x) << '\n';
-    return 0;
+	std::cout << "Enter an integer: ";
+	int x{}; // x defined here
+	std::cin >> x; // and used here
+
+	std::cout << "Enter another integer: ";
+	int y{}; // y defined here
+	std::cin >> y; // and used here
+
+	int sum{ x + y }; // sum can be initialized with intended value
+	std::cout << "The sum is: " << sum << '\n';
+
+	return 0;
 }
