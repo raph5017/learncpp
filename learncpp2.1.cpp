@@ -1,24 +1,12 @@
 #include <iostream>
 
-void doIt(int x)
-{
-    int y{ 4 };
-    std::cout << "doIt: x = " << x << " y = " << y << '\n';
-
-    x = 3;
-    std::cout << "doIt: x = " << x << " y = " << y << '\n';
-}
+int getInteger(); 
 
 int main()
 {
-    int x{ 1 };
-    int y{ 2 };
+	int x{ getInteger() };
+	int y{ getInteger() };
 
-    std::cout << "main: x = " << x << " y = " << y << '\n';
-
-    doIt(x);
-
-    std::cout << "main: x = " << x << " y = " << y << '\n';
-
-    return 0;
+	std::cout << x << " + " << y << " is " << x + y << '\n';
+	return 0;
 }
