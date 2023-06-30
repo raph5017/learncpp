@@ -1,12 +1,15 @@
-#include <iostream>
+#include <iostream> // imports the declaration of std::cout
 
-int getInteger(); 
+using namespace std; // makes std::cout accessible as "cout"
+
+int cout() // defines our own "cout" function in the global namespace
+{
+    return 5;
+}
 
 int main()
 {
-	int x{ getInteger() };
-	int y{ getInteger() };
+    cout << "Hello, world!"; // Compile error!  Which cout do we want here?  The one in the std namespace or the one we defined above?
 
-	std::cout << x << " + " << y << " is " << x + y << '\n';
-	return 0;
+    return 0;
 }
