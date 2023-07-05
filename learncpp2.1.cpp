@@ -1,18 +1,10 @@
-#include <iostream> // imports the declaration of std::cout
+#include <iostream>
 
-using namespace std; // makes std::cout accessible as "cout"
-
-int cout() // defines our own "cout" function in the global namespace
-{
-    return 5;
-}
+#define MY_NAME "Alex"
 
 int main()
 {
-    cout << "Hello, world!"; // Compile error!  Which cout do we want here?  The one in the std namespace or the one we defined above?
+    std::cout << "My name is: " << MY_NAME << '\n';
 
     return 0;
 }
-
-
-does this change anything?
