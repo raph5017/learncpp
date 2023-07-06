@@ -1,6 +1,6 @@
 #include <iostream>
 
-#define MY_NAME "Alex"
+#define MY_NAME "Jane"
 
 int main()
 {
