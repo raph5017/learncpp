@@ -1,7 +1,8 @@
 #include "square.h"
-#include "wave.h"
+#include <iostream>
 
 int main()
 {
-	return 0;
+	std::cout << "a square has " << getSquareSides() << "sides\n";
+	std::cout << "a square of length 5 has perimiter length " << getSquarePerimeter(5) << '\n';
 }
