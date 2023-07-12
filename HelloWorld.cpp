@@ -21,7 +21,7 @@ int main()
 	return 0;
 }
 
-*/
+
 
 #include "square.h"
 
@@ -33,4 +33,23 @@ int getSquareSides()
 int getSquarePerimeter(int sideLength)
 {
 	return sideLength * getSquareSides();
+}
+
+*/
+
+
+#include <iostream>
+
+int readNumber()
+{
+	std::cout << "Enter an integer: ";
+	int input{};
+	std::cin >> input;
+
+	return input;
+}
+
+void writeAnswer(int a)
+{
+	std::cout << "The answer is: " << a << '\n';
 }
